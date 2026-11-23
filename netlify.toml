@@ -1,0 +1,25 @@
+# CINEVORA: frontend Vite + API Express en Netlify Functions.
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
+  external_node_modules = ["express"]
+
+# Primero enviar TODAS las consultas API a la función del servidor.
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/api/:splat"
+  status = 200
+  force = true
+
+# React Router: permitir abrir y recargar rutas internas.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

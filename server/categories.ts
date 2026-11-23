@@ -1,0 +1,23 @@
+export type Category = { slug: string; title: string; caption: string; genre?: string; keyword?: string; language?: string; endDate?: string };
+export const categories: Category[] = [
+  {slug:'accion', title:'Acción',caption:'Adrenalina en cada escena',genre:'28'},
+  {slug:'artes-marciales', title:'Artes marciales',caption:'Técnica, disciplina y grandes combates',genre:'28',keyword:'martial arts'},
+  {slug:'peleas', title:'Peleas',caption:'Historias de combate y superación',keyword:'fighting'},
+  {slug:'aventura', title:'Aventura',caption:'Explora nuevos mundos',genre:'12'},
+  {slug:'ciencia-ficcion', title:'Ciencia ficción',caption:'Futuros que sorprenden',genre:'878'},
+  {slug:'terror', title:'Terror',caption:'Historias que te ponen a prueba',genre:'27'},
+  {slug:'suspenso', title:'Suspenso',caption:'Tensión de principio a fin',genre:'53'},
+  {slug:'comedia', title:'Comedia',caption:'Momentos para reír',genre:'35'},
+  {slug:'drama', title:'Drama',caption:'Historias que dejan huella',genre:'18'},
+  {slug:'romance', title:'Romance',caption:'Historias del corazón',genre:'10749'},
+  {slug:'fantasia', title:'Fantasía',caption:'Magia y mundos extraordinarios',genre:'14'},
+  {slug:'animacion', title:'Animación',caption:'Creatividad sin límites',genre:'16'},
+  {slug:'anime', title:'Anime',caption:'Animación de Japón',genre:'16',language:'ja'},
+  {slug:'crimen', title:'Crimen',caption:'Casos y decisiones difíciles',genre:'80'},
+  {slug:'misterio', title:'Misterio',caption:'Nada es lo que parece',genre:'9648'},
+  {slug:'belicas', title:'Bélicas',caption:'Historias ambientadas en guerras',genre:'10752'},
+  {slug:'documentales', title:'Documentales',caption:'El mundo real en pantalla',genre:'99'},
+  {slug:'superheroes', title:'Superhéroes',caption:'Personajes fuera de lo común',keyword:'superhero'},
+  {slug:'catastrofes', title:'Catástrofes',caption:'Supervivencia frente a lo imposible',keyword:'disaster'},
+  {slug:'clasicas', title:'Películas clásicas',caption:'Joyas de otras épocas',endDate:'1979-12-31'},
+];

@@ -1,0 +1,18 @@
+CINEVORA 1.1 — ACTUALIZACIÓN EN WINDOWS
+
+1. En la ventana de CMD donde funciona la versión anterior, presiona Ctrl + C.
+2. Descomprime este ZIP en una carpeta nueva y entra a la carpeta Cinevora_Actualizada.
+3. Copia el archivo .env de tu proyecto anterior y pégalo al lado del archivo package.json de Cinevora_Actualizada. El ZIP no incluye tus claves.
+4. Abre CMD en esa carpeta nueva.
+5. Ejecuta: npm install
+6. Ejecuta: npm run dev
+7. Abre: http://localhost:5173/descargas
+8. Elige Español declarado si quieres buscar versiones indicadas en ese idioma. Abre una ficha, revisa las versiones y selecciona la calidad disponible.
+
+Avisos:
+- El filtro de idioma se basa en los metadatos del publicador o el nombre del archivo, NO verifica el doblaje real.
+- 1080p y 4K aparecen solo si el archivo tiene esa resolución declarada; no se pueden generar versiones que no existen.
+- CINEVORA no agrega anuncios a su reproductor. No puede controlar publicidad incluida en archivos o sitios externos.
+- No subas .env a GitHub ni compartas el token de TMDB.
+- La aplicación consulta TMDB para información; TMDB no distribuye copias de películas.
+- Consulta siempre las licencias y derechos originales de las películas.
